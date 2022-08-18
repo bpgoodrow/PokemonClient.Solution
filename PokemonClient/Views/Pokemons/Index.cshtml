@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Pokemon:</h1>
+
+<h1>All Pokemon:</h1>
+
+<ol>
+@foreach (Pokemon pokemon in Model)
+{
+    <ul>
+        <li>National Pokedex Number: @pokemon.NationalPokedexNumber</li>
+        <li>Name: @pokemon.PokemonName</li>
+    </ul>
+    <a href="/Pokemons/Details/@(pokemon.PokemonId)"><p>View Details</p></a>
+    <br>
+}
+</ol>
+
+<a href="/Pokemons/Create"><p>Create New Pokemon</p></a>
+<a href="/Pokemons/page"><p>Pages</p></a>

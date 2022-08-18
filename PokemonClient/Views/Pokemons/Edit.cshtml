@@ -1,0 +1,20 @@
+<h1>Edit Info:</h1>
+<form action="/Pokemons/Details/@(Model.PokemonId)" method="post">
+  <label for="pokemonname">Pokemon's Name</label>
+  <input id="pokemonname" name="pokemonname" type="text" value="@(Model.PokemonName)">
+  <label for="nationalpokedexnumber">Pokemon's National Pokedex Number</label>
+  <input id="nationalpokedexnumber" name="nationalpokedexnumber" type="text" value="@(Model.NationalPokedexNumber)">
+  <label for="primarytype">Pokemon's Primary Type</label>
+  <input id="primarytype" name="primarytype" type="text" value="@(Model.PrimaryType)">
+  <label for="secondarytype">Pokemon's Secondary Type</label>
+  <input id="secondarytype" name="secondarytype" type="text" value="@(Model.SecondaryType)">
+  <label for="evolvesfrom">Pokemon's Evolves From</label>
+  <input id="evolvesfrom" name="evolvesfrom" type="text" value="@(Model.EvolvesFrom)">
+  <label for="evolvesto">Pokemon's Evolves To</label>
+  <input id="evolvesto" name="evolvesto" type="text" value="@(Model.EvolvesTo)">
+  <label for="details">Pokemon's <Details></Details></label>
+  <input id="details" name="details" type="text" value="@(Model.Details)">
+  <button type="submit">Go!</button>
+</form>
+
+<a href="/Pokemons/Details/@(Model.PokemonId)"><p>Return to Details</p></a>

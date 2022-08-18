@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Details";
+}
+
+<ol>
+
+    <ul>
+        <li>ID: @Model.PokemonId</li>
+        <li>National Pokedex Number: @Model.NationalPokedexNumber</li>
+        <li>Name: @Model.PokemonName</li>
+        <li>Primary Type: @Model.PrimaryType</li>
+        <li>Secondary Type: @Model.SecondaryType</li>
+        <li>Evolves From: @Model.EvolvesFrom</li>
+        <li>Evolves To: @Model.EvolvesTo</li>
+        <li>Details: @Model.Details</li>
+    </ul>
+    <a href="/Pokemons/Edit/@(Model.PokemonId)"><p>Edit</p></a>
+    <br>
+</ol>
+
+<a href="/Pokemons"><p>Return</p></a>
+<a href="/Pokemons/Delete/@(Model.PokemonId)"><p>DELETE THIS POKEMON</p></a>

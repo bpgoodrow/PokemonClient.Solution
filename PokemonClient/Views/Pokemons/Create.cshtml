@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>New Pokemon:</h1>
+
+<form action="/Pokemons/Create" method="post">
+  <label for="nationalPokedexNumber">National Pokedex Number:</label>
+  <input id="nationalPokedexNumber" name="nationalPokedexNumber" type="number">
+  <label for="pokemonName">Pokemon Name:</label>
+  <input id="pokemonName" name="pokemonName" type="text">
+  <label for="primaryType">Primary Type:</label>
+  <input id="primaryType" name="primaryType" type="text">
+  <label for="secondaryType">Secondary Type:</label>
+  <input id="secondaryType" name="secondaryType" type="text">
+  <label for="evolvesFrom">Evolves From:</label>
+  <input id="evolvesFrom" name="evolvesFrom" type="text">
+  <label for="evolvesTo">Evolves To:</label>
+  <input id="evolvesTo" name="evolvesTo" type="text">
+  <label for="details">Details:</label>
+  <input id="details" name="details" type="text">
+  <button type="submit">Go!</button>
+</form>
+
+<a href="/Pokemons"><p>Return</p></a>
